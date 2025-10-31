@@ -11,7 +11,7 @@ const painPoints = [{
 }, {
   icon: Search,
   title: '谷子找不到',
-  description: '收藏了100+枚谷子，想找特定的那枚五条悟生日吧唧，翻箱倒柜半小时还没找到',
+  description: '收藏了100+谷子，想找特定的那枚吧唧出来，翻箱倒柜半小时还没找到',
   color: 'text-yellow-400'
 }, {
   icon: AlertCircle,
