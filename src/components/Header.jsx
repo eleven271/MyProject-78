@@ -5,12 +5,16 @@ import { Menu, X } from 'lucide-react';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    setIsMenuOpen(false);
+  };
   const scrollToSection = sectionId => {
     if (sectionId === 'home') {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+      scrollToTop();
     } else {
       const element = document.getElementById(sectionId);
       if (element) {
@@ -33,7 +37,7 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-[#F7CAC9] transition-colors">
+            <button onClick={scrollToTop} className="text-gray-700 hover:text-[#F7CAC9] transition-colors">
               首页
             </button>
             <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-[#F7CAC9] transition-colors">
@@ -61,7 +65,7 @@ export function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-sm">
-              <button onClick={() => scrollToSection('home')} className="block w-full text-left px-3 py-2 text-gray-700 hover:text-[#F7CAC9] transition-colors">
+              <button onClick={scrollToTop} className="block w-full text-left px-3 py-2 text-gray-700 hover:text-[#F7CAC9] transition-colors">
                 首页
               </button>
               <button onClick={() => scrollToSection('about')} className="block w-full text-left px-3 py-2 text-gray-700 hover:text-[#F7CAC9] transition-colors">
