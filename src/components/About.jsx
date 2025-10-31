@@ -25,7 +25,7 @@ const solutions = [{
   description: '多设备实时同步，数据永不丢失'
 }];
 export function About() {
-  return <section id="about" className="py-20 bg-gradient-to-br from-white to-[#F7CAC9]/10">
+  return <section className="py-20 bg-gradient-to-br from-white to-[#F7CAC9]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -42,14 +42,12 @@ export function About() {
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">
               收藏者的困扰
             </h3>
-            <div className="space-y-6">
-              {problems.map((problem, index) => <div key={index} className="bg-white/20 backdrop-blur-sm rounded-xl p-6">
-                  <div className="flex items-start">
-                    <div className="w-2 h-2 bg-[#F7CAC9] rounded-full mt-2 mr-4 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">{problem.title}</h4>
-                      <p className="text-gray-600">{problem.description}</p>
-                    </div>
+            <div className="space-y-4">
+              {problems.map((problem, index) => <div key={index} className="flex items-start">
+                  <div className="w-2 h-2 bg-[#F7CAC9] rounded-full mt-2 mr-4 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">{problem.title}</h4>
+                    <p className="text-gray-600">{problem.description}</p>
                   </div>
                 </div>)}
             </div>
