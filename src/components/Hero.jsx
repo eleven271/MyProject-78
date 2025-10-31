@@ -27,10 +27,6 @@ export function Hero() {
             立即体验
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
-          
-          <button className="bg-white text-[#F7CAC9] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300">
-            了解更多
-          </button>
         </div>
 
         {/* 装饰元素 */}
