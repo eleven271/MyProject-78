@@ -1,107 +1,54 @@
 // @ts-ignore;
 import React from 'react';
 // @ts-ignore;
-import { Heart, Clock, Search, AlertCircle, CheckCircle, Star } from 'lucide-react';
+import { Database, BarChart3, Shield } from 'lucide-react';
 
-const painPoints = [{
-  icon: Clock,
-  title: '预售等到天荒地老',
-  description: '预售200天，等到我都忘了买过这个，找当初的订单好痛苦',
-  color: 'text-red-400'
-}, {
-  icon: Search,
-  title: '谷子找不到',
-  description: '收藏了100+谷子，想找特定的那枚吧唧出来，翻箱倒柜半小时还没找到',
-  color: 'text-yellow-400'
-}, {
-  icon: AlertCircle,
-  title: '重复购买',
-  description: '看到好看的柄图就冲动下单，结果收到发现已经买过同款，钱包在哭泣',
-  color: 'text-orange-400'
-}];
-const solutions = [{
-  icon: CheckCircle,
-  title: '预售追踪',
-  description: '自动记录预售信息，到货提醒，再也不错过补邮',
-  color: 'text-green-400'
-}, {
-  icon: Search,
-  title: '智能搜索',
-  description: 'IP×角色×系列×柄图四维标签，3秒找到目标谷子',
-  color: 'text-blue-400'
-}, {
-  icon: Star,
-  title: '重复提醒',
-  description: '录入时智能检测相似谷子，避免重复购买',
-  color: 'text-purple-400'
-}];
 export function About() {
-  return <section id="about" className="py-20 bg-gradient-to-br from-[#92A8D1] via-[#A3B5D8] to-[#F7CAC9]">
+  return <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            为什么需要谷子珍藏家？
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            项目背景
           </h2>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            专为谷子收藏者打造的痛点解决方案
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            作为资深谷子收藏者，我们深知管理庞大收藏的痛苦：<br />
+            信息分散、价值难追踪、预售易错过...<br />
+            于是我们打造了这款专为谷子收藏者设计的管理工具
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* 痛点 */}
-          <div>
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-              <Heart className="w-6 h-6 mr-2 text-red-400" />
-              谷圈真实痛点
-            </h3>
-            <div className="space-y-6">
-              {painPoints.map((point, index) => <div key={index} className="bg-white/20 backdrop-blur-sm rounded-xl p-6">
-                  <div className="flex items-start">
-                    <div className={`p-2 rounded-lg bg-white/20 mr-4 ${point.color}`}>
-                      <point.icon className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-white mb-2">{point.title}</h4>
-                      <p className="text-white/80">{point.description}</p>
-                    </div>
-                  </div>
-                </div>)}
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="text-center p-6">
+            <div className="w-16 h-16 bg-[#F7CAC9] rounded-xl flex items-center justify-center mx-auto mb-4">
+              <Database className="w-8 h-8 text-white" />
             </div>
-          </div>
-
-          {/* 解决方案 */}
-          <div>
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-              <CheckCircle className="w-6 h-6 mr-2 text-green-400" />
-              我们的解决方案
-            </h3>
-            <div className="space-y-6">
-              {solutions.map((solution, index) => <div key={index} className="bg-white/20 backdrop-blur-sm rounded-xl p-6">
-                  <div className="flex items-start">
-                    <div className={`p-2 rounded-lg bg-white/20 mr-4 ${solution.color}`}>
-                      <solution.icon className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-white mb-2">{solution.title}</h4>
-                      <p className="text-white/80">{solution.description}</p>
-                    </div>
-                  </div>
-                </div>)}
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-16 text-center">
-          <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              让每一枚谷子都有故事
-            </h3>
-            <p className="text-white/80 mb-6">
-              从预售追踪到价值记录，从分类管理到社区分享，谷子珍藏家为您提供全方位的谷子管理体验
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">智能分类管理</h3>
+            <p className="text-gray-600">
+              支持立牌、吧唧、亚克力等多品类管理<br />
+              自定义标签系统，让收藏井井有条
             </p>
-            <button className="bg-white text-[#F7CAC9] px-6 py-3 rounded-lg font-medium hover:bg-white/90 transition-all">
-              开始珍藏之旅
-            </button>
+          </div>
+
+          <div className="text-center p-6">
+            <div className="w-16 h-16 bg-[#92A8D1] rounded-xl flex items-center justify-center mx-auto mb-4">
+              <BarChart3 className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">价值追踪记录</h3>
+            <p className="text-gray-600">
+              实时记录谷子价值变化<br />
+              生成个人收藏资产报告
+            </p>
+          </div>
+
+          <div className="text-center p-6">
+            <div className="w-16 h-16 bg-[#F7CAC9] rounded-xl flex items-center justify-center mx-auto mb-4">
+              <Shield className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">数据安全保障</h3>
+            <p className="text-gray-600">
+              云端多重备份，永不丢失<br />
+              支持数据导出，完全掌控
+            </p>
           </div>
         </div>
       </div>
