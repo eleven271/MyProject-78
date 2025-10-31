@@ -4,7 +4,7 @@ import React from 'react';
 import { ArrowDown } from 'lucide-react';
 
 export function Hero() {
-  return <section id="home" className="pt-20 pb-16 bg-gradient-to-br from-[#F7CAC9] via-[#F4C2C1] to-[#92A8D1]">
+  return <section id="home" className="py-32 bg-gradient-to-br from-[#F7CAC9] via-[#F4C2C1] to-[#92A8D1]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -23,7 +23,7 @@ export function Hero() {
           </div>
         </div>
         
-        <div className="text-center mt-12">
+        <div className="text-center mt-20">
           <ArrowDown className="w-8 h-8 text-white/60 mx-auto animate-bounce" />
         </div>
       </div>
