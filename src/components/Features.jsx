@@ -31,23 +31,23 @@ export function Features() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-3 gap-6">
           {features.map((feature, index) => <div key={index} className="group">
-              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 h-full hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <div className="w-16 h-16 bg-white/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <feature.icon className="w-8 h-8 text-white" />
+              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 h-full hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <div className="w-14 h-14 bg-white/30 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <feature.icon className="w-7 h-7 text-white" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-white mb-4">
+                <h3 className="text-lg font-bold text-white mb-3">
                   {feature.title}
                 </h3>
                 
-                <p className="text-white/80 mb-6 whitespace-pre-line">
+                <p className="text-white/80 mb-4 text-sm whitespace-pre-line">
                   {feature.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2">
-                  {feature.tags.map((tag, tagIndex) => <span key={tagIndex} className="px-3 py-1 bg-white/20 text-white rounded-full text-sm">
+                <div className="flex flex-wrap gap-1">
+                  {feature.tags.map((tag, tagIndex) => <span key={tagIndex} className="px-2 py-1 bg-white/20 text-white rounded-full text-xs">
                       {tag}
                     </span>)}
                 </div>
