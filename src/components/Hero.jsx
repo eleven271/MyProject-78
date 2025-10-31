@@ -13,7 +13,9 @@ export function Hero() {
           </h1>
           
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            专为谷子收藏者设计的专业管理工具，支持徽章、立牌、吧唧等多品类管理，预售追踪，价值记录，让您的珍藏井井有条
+            专为谷子收藏者设计的专业管理工具<br />
+            支持徽章、立牌、吧唧等多品类管理，预售追踪，价值记录<br />
+            让您的珍藏井井有条
           </p>
           
           <div className="flex justify-center">
