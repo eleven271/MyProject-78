@@ -12,9 +12,7 @@ export function Hero() {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="mb-8">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            珍藏每一枚
-            <br />
-            <span className="text-white/90">谷子的故事</span>
+            珍藏每一枚谷子的故事
           </h1>
           
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
