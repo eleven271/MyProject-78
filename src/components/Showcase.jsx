@@ -17,7 +17,7 @@ const screenshots = [{
   image: '/api/placeholder/300/600'
 }];
 export function Showcase() {
-  return <section id="showcase" className="py-20 bg-gradient-to-br from-[#92A8D1] to-[#F7CAC9]">
+  return <section id="showcase" className="py-20 bg-gradient-to-br from-[#F7CAC9] via-[#F4C2C1] to-[#92A8D1]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
