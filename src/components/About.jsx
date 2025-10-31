@@ -38,7 +38,7 @@ export function About() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* 左侧：问题 */}
-          <div>
+          <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6">
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">
               收藏者的困扰
             </h3>
